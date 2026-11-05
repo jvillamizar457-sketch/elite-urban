@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-light: #F2CB57;
+    --gold: #D9A13B;
+    --red-intense: #D90404;
+    --red-dark: #730202;
+    --black: #0D0D0D;
+    --surface-1: #141414;
+    --surface-2: #1A1A1A;
+    --surface-3: #222222;
+  }
+
+  body {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    background-color: #0D0D0D;
+    color: #F3F4F6;
+  }
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', 'Anton', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Streetwear outline text style seen in catalog cards */
+.text-stroke-subtle {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.14);
+  color: transparent;
+}
+
+.text-stroke-gold {
+  -webkit-text-stroke: 1px rgba(217, 161, 59, 0.35);
+  color: transparent;
+}
+
+/* Smooth continuous marquee */
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-infinite 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Golden radial glow for hero badge */
+.gold-radial-glow {
+  background: radial-gradient(circle, rgba(217, 161, 59, 0.18) 0%, rgba(217, 4, 4, 0.08) 45%, rgba(13, 13, 13, 0) 70%);
+}
+
+.red-radial-glow {
+  background: radial-gradient(circle, rgba(217, 4, 4, 0.15) 0%, rgba(115, 2, 2, 0.05) 50%, rgba(13, 13, 13, 0) 70%);
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D9A13B;
+}

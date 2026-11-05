@@ -1,0 +1,8 @@
+{
+  "name": "ELITE URBAN - Streetwear & Moda Urbana",
+  "description": "Tienda virtual oficial de ELITE URBAN por Diego Misas. Ropa, calzado y accesorios urbanos para hombres, mujeres y niños. Envíos a toda Colombia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
